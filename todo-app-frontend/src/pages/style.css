@@ -1,0 +1,46 @@
+/* styles.css*/
+@keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+    }
+    90% {
+      box-shadow: 0 0 10px rgb(255, 255, 1);
+    }
+  }
+  
+  .glow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Adjusted position */
+    transform: translateY(-50%);
+    width: 15px; /* Adjusted size */
+    height: 15px; /* Adjusted size */
+    border-radius: 50%;
+    border: 2px solid yellow;
+    animation: glow 1.5s ease-in-out infinite;
+  }
+  
+/* styles.css greenGlow */
+@keyframes greenGlow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    }
+    90% {
+      box-shadow: 0 0 10px rgb(52, 255, 1);
+    }
+  }
+  
+  .greenGlow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Adjusted position */
+    transform: translateY(-50%);
+    width: 15px; /* Adjusted size */
+    height: 15px; /* Adjusted size */
+    border-radius: 50%;
+    border: 2px solid rgb(0, 255, 13);
+    animation: glow 1.5s ease-in-out infinite;
+  }
+  
